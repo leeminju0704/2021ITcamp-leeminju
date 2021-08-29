@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+<title>"EOG": power drinks seller site</title>                                      <!-- 1. 제목 수정-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="https://i.imgur.com/chdwojz.png">
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.video, .bgimg-2, .bgimg-3 ,.bgimg-4, .bgimg-5{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+                                                          /*2. 이미지 수정(가로 이미지 사용) */
+
+                                                          .line{
+display: flex;
+flex-basis: 100;
+align-items: center;
+color: rgba(212, 0, 177, 0.507);
+font-size: 14px;
+margin:8px 0px
+
+}
+.line::before{
+content: "";
+flex-grow: 1;
+margin: 0px 16px;
+background: rgba(255, 141, 227, 0.747);
+height: 40px;
+font-size: 0px;
+line-height: 0px;
+
+}
+.line::after{
+content: "";
+flex-grow: 1;
+margin: 0px 16px;
+background: rgba(225, 141, 227, 0.747);
+height: 40px;
+font-size: 0px;
+line-height: 0px;
+
+}
+
+
+
+.bgimg-1 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/13/18/23/space-2638126_960_720.jpg");
+    min-height: 100%;
+}
+
+                                                         /*2. 이미지 수정(가로 이미지 사용) */
+.bgimg-2 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/13/18/23/space-2638126_960_720.jpg");
+    min-height: 400px;
+
+  }
+
+                                                         /*2. 이미지 수정(가로 이미지 사용) */
+.bgimg-3 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/13/18/23/space-2638126_960_720.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/13/18/23/space-2638126_960_720.jpg");
+    min-height: 400px;
+}
+
+.bgimg-5{
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/13/18/23/space-2638126_960_720.jpg");
+    min-height: 400px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 .bgimg-5{
+        background-attachment: scroll;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+</style>
+
+</style>
+
+<body bgcolor="#151515">
+
+<!-- Navbar (sit on top) -->
+
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-text-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    
+      <div class="menu">
+    </a>                                                               <!-- 3. 메뉴수정 -->
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small"> <h5 class="jb-white"><i class="fa fa-beer" aria-hidden="true"></i>ㅤ</h5></a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"> <h5 class="jb-white"><i class="fa fa-newspaper-o" aria-hidden="true"></i> NEW PRODUCTS!</h5></a>
+    <a href="#link" class="w3-bar-item w3-button w3-hide-small"> <h5 class="jb-white"><i class="fa fa-shopping-basket" aria-hidden="true"></i> SHOP</h5></a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"> <h5 class="jb-white"><i class="fa fa-phone" aria-hidden="true"></i> SERVICE CENTER</h5></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+     
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->                                     <!-- 3. 메뉴수정 -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">CjwKCAjwmeiIBhA6EiwA-uaeFekb0L3_Db5ExNqGNaGE2KjMpGzfcD60K9ldLVTxLEWMS1zHGgzhMxoCrTcQAvD_BwE</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#link" class="w3-bar-item w3-button" onclick="toggleFunction()">LINK</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  
+  </div>
+  </div>
+</div>
+
+<div class="conglaturation">
+  <h2>ㅤ</h2>
+  </div>
+
+<!-- First Parallax Image with Logo Text -->
+<img src="https://i.imgur.com/AGt3DZx.jpg" style="float: right; width:553px; height:763px; max-width: 100%;">
+
+<section>
+ 
+  <div class="video">
+  
+    <video  
+     width="1350" loop autoplay muted>
+    <source src="https://i.imgur.com/VYGu8Nj.mp4" type="video/mp4">
+  </video>
+
+
+  
+</div>
+</section>
+<h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255); font-size: px; "></span>ㅤㅤㅤㅤ</em></h1>
+
+
+
+<aside>
+<div class="INTRODUCE">
+<!-- Container (About Section) -->                                     <!-- 5. 프로필 수정 -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <div class="line"><h1 class="w3-center"><span style="font-family: 'Press Start 2P', cursive; color: rgb(255, 107, 255); font-size: 70px;">ㅤ NEW!ㅤ  </span></h1></div>
+  <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255); font-size: px; "></span>ㅤㅤㅤㅤ</em></h1>
+  <h3 class><em><span style="font-family: 'Rokkitt', serif; color: rgb(219, 73, 238); font-size: 50px;"></span></em></h3>
+
+  <div class="w3-row">
+   
+<img src="https://i.imgur.com/idQvQkJ.png" style="float: left;  margin-left: -350px; width:20.5%; height:50%;">
+
+
+
+
+    <!-- Container (About Section) -->                                     <!-- 5. 프로필 수정 -->
+
+    <table>
+      <tr style="vertical-align:top">
+        <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+          <span style="font-family: 'Press Start 2P', cursive; color: rgb(255, 255, 255); font-size: 40px; "> Another Hole </span></td>
+        <td style="padding-left:10px"><span style="font-family: 'Press Start 2P', cursive; color: rgb(255, 255, 255); font-size: 40px; "> ㅤㅤPrice: ㅤㅤㅤㅤ
+        <del style="font-size: 30px; color: red;">3,000 ₩ </del>🔽
+        </span></td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+          <span style="font-family: 'Press Start 2P', cursive; color: rgb(140, 0, 255); font-size: 20px; "> ㅤ Launching For </span></td>
+        <td style="padding-left:10px"><span style="font-family: 'Press Start 2P', cursive; color: rgb(255, 255, 255); font-size: 40px; ">
+          
+        </span></td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+          <span style="font-family: 'Press Start 2P', cursive; color: rgb(189, 182, 255); font-size: 20px; "> ㅤㅤAlian </span></td>
+        <td style="padding-left:10px"><span style="font-family: 'Press Start 2P', cursive; color: rgb(189, 182, 255); font-size: 20px; "> 
+          ㅤㅤㅤ<a href="https://docs.google.com/forms/d/e/1FAIpQLSc_x6hQKwmbcpTHw-yJmHb7Q46eYcBW5lLkb_dU5sJW24QccA/viewform?usp=sf_link" target="_blank"><button class="w3-button w3-padding-small w3-purple" style="margin-top:15px"><span style="font-family: 'Press Start 2P', cursive; color: rgb(189, 182, 255); font-size: 15px; ">BUY: ANOTHER HOLE</span></button></a>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+          "당신이ㅤ둘러 봤던  <span style="font-family: 'Black Han Sans', sans-serif; color: rgb(255, 95, 202); font-size: 19px; ">ㅤ모든 행성</span>이ㅤ지루하신가요?</td>
+        <td style="padding-left:10px"><span style="font-family: 'Press Start 2P', cursive; color: rgb(255, 95, 202); font-size: 19px; ">
+        
+        </span></td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+          당장<span style="font-family: 'Black Han Sans', sans-serif; color: rgb(255, 82, 197); font-size: 17px; "> 다른 차원의 터널</span>로ㅤ떠나보세요!"</td>
+        <td style="padding-left:10px"><span style="font-family: 'Black Han Sans', sans-serif; color: rgb(255, 255, 255); font-size: 17px; ">
+          ㅤㅤㅤ 우주조미료 알레르기 있으신 분 절대 권장 x
+        </span></td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+          <span style="font-family: 'Press Start 2P', cursive; color: rgb(189, 182, 255); font-size: 15px; "> "MAGIC + Free sugar" </span></td>
+        <td style="padding-left:10px"> <span style="font-family: 'Press Start 2P', cursive; color: rgb(189, 182, 255); font-size: 15px; "> 
+        
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+          <span style="font-family: 'Press Start 2P', cursive; color: rgb(255, 255, 255); font-size: 15px; "></span></td>
+        <td style="padding-left:10px"> </td>
+      </tr>
+    </table>
+    <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255); font-size: px; "></span>ㅤㅤㅤㅤ</em></h1>
+
+
+    
+
+    <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255); font-size: px; "></span>ㅤㅤㅤㅤ</em></h1>
+   
+    <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255); font-size: px; "></span>ㅤㅤㅤㅤ</em></h1>
+    <hr style="border: inset  20px  rgb(247, 155, 255);">
+    <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255); font-size: px; "></span>ㅤㅤㅤㅤ</em></h1>
+
+   
+    <h3 class><em><span style="font-family: 'Rokkitt', serif; color: rgb(219, 73, 238); font-size: 50px;"></span></em></h3>
+
+     
+  <img src="https://i.imgur.com/RMd2qdM.png" style="float: left;  margin-left: -350px; width:30.5%; height:50%;">
+  
+  
+  
+
+  
+      <!-- Container (About Section) -->                                     <!-- 5. 프로필 수정 -->
+  
+      <table>
+        <tr style="vertical-align:top">
+          <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+            <span style="font-family: 'Press Start 2P', cursive; color: rgb(255, 255, 255); font-size: 90px; "> 뭬. </span></td>
+          <td style="padding-left:10px"><span style="font-family: 'Press Start 2P', cursive; color: rgb(255, 255, 255); font-size: 40px; "> ㅤㅤPrice: ㅤㅤㅤㅤ
+          <del style="font-size: 30px; color: red;">100,000 ₩ </del>🔽
+          </span></td>
+        </tr>
+        <tr style="vertical-align:top">
+          <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+            <span style="font-family: 'Press Start 2P', cursive; color: rgb(140, 0, 255); font-size: 20px; "> ㅤ Launching For </span></td>
+          <td style="padding-left:10px"><span style="font-family: 'Press Start 2P', cursive; color: rgb(255, 255, 255); font-size: 40px; ">
+            
+          </span></td>
+        </tr>
+        <tr style="vertical-align:top">
+          <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+            <span style="font-family: 'Press Start 2P', cursive; color: rgb(189, 182, 255); font-size: 20px; "> ㅤㅤME </span></td>
+          <td style="padding-left:10px"><span style="font-family: 'Press Start 2P', cursive; color: rgb(189, 182, 255); font-size: 20px; "> 
+            ㅤㅤㅤ<a href="https://docs.google.com/forms/d/e/1FAIpQLSc_x6hQKwmbcpTHw-yJmHb7Q46eYcBW5lLkb_dU5sJW24QccA/viewform?usp=sf_link" target="_blank"><button class="w3-button w3-padding-small w3-purple" style="margin-top:15px"><span style="font-family: 'Press Start 2P', cursive; color: rgb(189, 182, 255); font-size: 15px; ">BUY: MUEA.</span></button></a>
+          </td>
+        </tr>
+        <tr style="vertical-align:top">
+          <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+            "스폰지밥ㅤ다들  <span style="font-family: 'Black Han Sans', sans-serif; color: rgb(255, 95, 202); font-size: 19px; ">ㅤ징그럽다</span>던데ㅤ정말인가요?</td>
+          <td style="padding-left:10px"><span style="font-family: 'Press Start 2P', cursive; color: rgb(255, 95, 202); font-size: 19px; ">
+          
+          </span></td>
+        </tr>
+        <tr style="vertical-align:top">
+          <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+            진짜<span style="font-family: 'Black Han Sans', sans-serif; color: rgb(255, 82, 197); font-size: 17px; "> 귀여운</span>데에..."</td>
+          <td style="padding-left:10px"><span style="font-family: 'Black Han Sans', sans-serif; color: rgb(255, 255, 255); font-size: 17px; ">
+            ㅤㅤㅤ
+          </span></td>
+        </tr>
+        <tr style="vertical-align:top">
+          <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+            <span style="font-family: 'Press Start 2P', cursive; color: rgb(189, 182, 255); font-size: 15px; "> "LOVE + GEASALBURGER" </span></td>
+          <td style="padding-left:10px"> <span style="font-family: 'Press Start 2P', cursive; color: rgb(189, 182, 255); font-size: 15px; "> 
+          
+          </td>
+        </tr>
+        <tr style="vertical-align:top">
+          <td style="width:450px; border-right:5px solid rgb(255, 82, 197); padding-right:10px; text-align:justify">
+            <span style="font-family: 'Press Start 2P', cursive; color: rgb(255, 255, 255); font-size: 15px; "></span></td>
+          <td style="padding-left:10px">     </td>
+        </tr>
+      </table>
+  
+      
+  
+      <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255); font-size: px; "></span>ㅤㅤㅤㅤ</em></h1>
+     
+      <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255); font-size: px; "></span>ㅤㅤㅤㅤ</em></h1>
+      <hr style="border: inset  20px  rgb(247, 155, 255);">
+   
+   
+    </div>
+   
+   
+   
+ 
+      
+    
+   
+   
+   <!-- Hide this text on small devices -->
+     <!-- 7. 자기소개  -->
+       <div class="w3-col m6 w3-hide-small w3-padding-large">
+       
+        <h3></h3>
+        <h4></h4>
+        <h4> </h4>
+   
+        <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255);"></span>ㅤㅤㅤㅤ</em></h1>
+        <p><b><span style = " font-size:35px;  color: rgb(255, 255, 255);">  </span></b></p><br>
+
+      </div>
+       </div>
+      </div>                                                 
+      
+    
+                                        
+                                       
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <h3 class="w3-xxlarge w3-text-white w3-wide"><b>ㅤ <span style = "font-family: 'Press Start 2P', cursive; font-size:70px;  color: rgb(255, 92, 255);"><i class="fa fa-shopping-basket" aria-hidden="true"></i> 24H SHOP</span></b></h3>
+    <span class="w3-xxlarge w3-text-white w3-wide"><b><span style = " font-size:35px;  color: rgb(44, 42, 42);"></span></b></span>
+  </div>
+</div>
+
+<!-- Container (link Section) -->
+                                                                        <!-- 9. 강좌 소개 -->
+<div class="w3-content w3-container w3-padding-64" id="link">
+  
+  <div class="line"><h3 class="w3-center"> <span style = "font-family: 'Press Start 2P', cursive; font-size:70px;  color: rgb(234, 54, 250);">ㅤWELCOMEㅤ</span>  </h3></div>
+  <h3 class="w3-center"> <span style = "font-family: 'Press Start 2P', cursive; font-size:30px;  color: rgb(209, 162, 240);"> <i class="fa fa-check" aria-hidden="true"></i> WE OFFER 24H 
+    DELIVERY <i class="fa fa-check" aria-hidden="true"></i></WE></span>  </h3>
+
+    <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255);"></span>ㅤㅤㅤㅤ</em></h1><h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255);"></span>ㅤㅤㅤㅤ</em></h1>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_x6hQKwmbcpTHw-yJmHb7Q46eYcBW5lLkb_dU5sJW24QccA/viewform?usp=sf_link"><img src="https://i.imgur.com/Mt0VyLp.png" style="float: left;  margin-left: -250px; width:23.5%; height:50%;"></a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_x6hQKwmbcpTHw-yJmHb7Q46eYcBW5lLkb_dU5sJW24QccA/viewform?usp=sf_link"><img src="https://i.imgur.com/nvylemR.png" style="float: left;  margin-left: 150px; width:20.5%; height:50%;"></a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_x6hQKwmbcpTHw-yJmHb7Q46eYcBW5lLkb_dU5sJW24QccA/viewform?usp=sf_link"><img src="https://i.imgur.com/Pm4jazP.png" style="float: right;  margin-right: 200px; width:26.5%; height:53%;"></a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_x6hQKwmbcpTHw-yJmHb7Q46eYcBW5lLkb_dU5sJW24QccA/viewform?usp=sf_link"><img src="https://i.imgur.com/Y3kp8V9.png" style="float: right;  margin-right: -600px; width:21%; height:50%;"></a>
+
+
+        
+        
+    <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255);"></span>ㅤㅤㅤㅤ</em></h1>
+    <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255);"></span>ㅤㅤㅤㅤ</em></h1>
+    <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255);"></span>ㅤㅤㅤㅤ</em></h1>
+    
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+ 
+ 
+</div>
+  
+
+  <h3 class="w3-center"> <span style = "font-family: 'Press Start 2P', cursive; font-size:20px;  color: rgb(51, 190, 255);">*IF YOU WANT TO BUY IT, CLICK THE IMAGE*</span></h3>
+
+
+  <hr style="border: inset  20px  rgb(247, 155, 255);">
+  
+  <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255);"></span>ㅤㅤㅤㅤ</em></h1>
+
+  <div class="bgimg-5 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <h3 class="w3-xxlarge w3-text-white w3-wide"><b>ㅤ <span style = "font-family: 'Press Start 2P', cursive; font-size:50px;  color: rgb(255, 92, 255);"><i class="fa fa-thumbs-up" aria-hidden="true"></i> POPULARITY <i class="fa fa-thumbs-down" aria-hidden="true"></i></span></b></h3>
+    </div>
+  </div>
+<!--상품 인기도 -->
+<h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255);"></span>ㅤㅤㅤㅤ</em></h1>
+
+<p class="w3-xxlarge w3-center w3-padding-16"><span style = "font-family: 'Press Start 2P', cursive; font-size:60px;  color: rgb(234, 54, 250);"></span> </p>
+<p class="w3-large w3-wide"><span style = "font-family: 'Press Start 2P', cursive; font-size:20px;  color: rgb(255, 139, 245);">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤTROPICAL STARS IN HAWAI</span></p>
+<div class="w3-white">
+<div class="w3-container w3-padding-small w3-light-blue   w3-center" style="width:100%">1000%(1000명 구매)</div>
+ </div>
+
+<p class="w3-large  w3-wide"><span style = "font-family: 'Press Start 2P', cursive; font-size:20px;  color: rgb(255, 139, 245);">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤFIND NEW PLANET</span></p>
+<div class="w3-white">
+<div class="w3-container w3-padding-small w3-light-blue w3-center" style="width:98%">930%(930명 구매)</div>
+</div>
+
+<p class="w3-large  w3-wide"><span style = "font-family: 'Press Start 2P', cursive; font-size:20px;  color: rgb(255, 139, 245);">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤAURORA</span></p>
+<div class="w3-white">
+<div class="w3-container w3-padding-small w3-light-blue w3-center" style="width:92%">830%(830명 구매)</div>
+ </div>
+<p class="w3-large  w3-wide"><span style = "font-family: 'Press Start 2P', cursive; font-size:20px;  color: rgb(255, 139, 245);">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ SHOOTING IN GALAXY</span></p>
+<div class="w3-white">
+<div class="w3-container w3-padding-small w3-light-blue w3-center" style="width:87%">720%(720명 구매)</div>
+</div>
+<p class="w3-large  w3-wide"><span style = "font-family: 'Press Start 2P', cursive; font-size:35px;  color: rgb(255, 139, 245);">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ뭬.</span></p>
+<div class="w3-white">
+<div class="w3-container w3-padding-small w3-light-blue w3-center" style="width:10%">0.001%(1명 구매)</div>
+</div>
+</div>
+
+                                       <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255);"></span>ㅤㅤㅤㅤ</em></h1>
+                                       <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255);"></span>ㅤㅤㅤㅤ</em></h1>
+                                       <h1 class="w3-center"><em><span style="font: italic bold 1.5em/1em Georgia, serif ; color: rgb(255, 255, 255);"></span>ㅤㅤㅤㅤ</em></h1>
+
+<!--여기서 부터는 SERVICE CENTER와 소개 글-->
+
+
+</div>
+
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <h3 class="w3-xxlarge w3-text-white w3-wide"><b>ㅤ <span style = "font-family: 'Press Start 2P', cursive; font-size:40px;  color: rgb(255, 92, 255);"><i class="fa fa-phone" aria-hidden="true"></i> SERVICE CENTER</span></b></h3>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+                                                                                <!-- 10. 본인 인적사항 수정!!! -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center"><i class="fa fa-phone" aria-hidden="true"></i> SERVICE CENTER</h3>
+  <p class="w3-center"><em>EOG 고객문의 담당자 위치</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>미래의 장소 : 미림여자정보과학고<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone : 010-0000-0000 <br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: leeminju0704@gmail.com<br>
+       
+      </div>
+      <p>문의하실 경우 위의 정보를 이용 해 주십시오.</p>
+      <p>고객분들께 더 나은 서비스를 위해 피드백을 받습니다.</p> 
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScEEza2qo3tg3x-Tr4y9UJ1tlk8BkuEM2iRIz0F4N-15Ms1VA/viewform?embedded=true"  width="490" height="490" frameborder="0" marginheight="0" marginwidth="0">로드 중…</iframe>
+
+
+      <h1>감사합니다.</h1>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-purple w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-white"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<!-- Add Google Maps -->                                                        <!-- 11. 구글맵 수정 부분!!! -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(37.4665516, 126.932908);
+  var mapOptions= {
+    center:myCenter,
+    zoom:15, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcPf9E3ib0x4VS321Hm6Pz4pSxLTzOvrY&callback=myMap"></script>
+
+</body>
+</html>
